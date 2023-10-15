@@ -1,0 +1,8 @@
+/home/d/IdeaProjects/PP_1_1_3-4_JDBC_Hibernate_anotherCopy/src/main/java/jm/task/core/jdbc/Main.java
+/home/d/IdeaProjects/PP_1_1_3-4_JDBC_Hibernate_anotherCopy/src/main/java/jm/task/core/jdbc/util/Util.java
+/home/d/IdeaProjects/PP_1_1_3-4_JDBC_Hibernate_anotherCopy/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java
+/home/d/IdeaProjects/PP_1_1_3-4_JDBC_Hibernate_anotherCopy/src/main/java/jm/task/core/jdbc/model/User.java
+/home/d/IdeaProjects/PP_1_1_3-4_JDBC_Hibernate_anotherCopy/src/main/java/jm/task/core/jdbc/service/UserService.java
+/home/d/IdeaProjects/PP_1_1_3-4_JDBC_Hibernate_anotherCopy/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java
+/home/d/IdeaProjects/PP_1_1_3-4_JDBC_Hibernate_anotherCopy/src/main/java/jm/task/core/jdbc/dao/UserDao.java
+/home/d/IdeaProjects/PP_1_1_3-4_JDBC_Hibernate_anotherCopy/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java
