@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd7311a5-c001-40a1-84df-efbf16d7cf1f" name="Changes" comment="2">
+    <list default="true" id="fd7311a5-c001-40a1-84df-efbf16d7cf1f" name="Changes" comment="getAllUsers с помощью нативного SQL-запроса">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoHibernateImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoHibernateImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697388938257</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1. Зачем в методе saveUser при  сохранении пользоваться PreparedStatement? Убрать и использовать метод save обьекта session&#10;2. В методе getAllUsers не использвать CriteriaQuery&#10;3. Во всех методах, если есть транзакция, то у нее должен быть предусмотрен rollback">
+      <option name="closed" value="true" />
+      <created>1698105367036</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698105367036</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,7 +192,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
     <MESSAGE value="2" />
-    <option name="LAST_COMMIT_MESSAGE" value="2" />
+    <MESSAGE value="1. Зачем в методе saveUser при  сохранении пользоваться PreparedStatement? Убрать и использовать метод save обьекта session&#10;2. В методе getAllUsers не использвать CriteriaQuery&#10;3. Во всех методах, если есть транзакция, то у нее должен быть предусмотрен rollback" />
+    <MESSAGE value="getAllUsers с помощью нативного SQL-запроса" />
+    <option name="LAST_COMMIT_MESSAGE" value="getAllUsers с помощью нативного SQL-запроса" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

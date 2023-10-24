@@ -11,6 +11,7 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.query.NativeQuery;
 import org.hibernate.query.Query;
 
 import javax.persistence.criteria.CriteriaBuilder;
@@ -92,14 +93,32 @@ public class UserDaoHibernateImpl implements UserDao {
         }
     }
 
-    @Override
+//    @Override
+//    public List<User> getAllUsers() {
+//        Transaction transaction = null;
+//        List<User> users = new ArrayList<>();
+//        SessionFactory sessionFactory = getSessionFactory();
+//        try (Session session = sessionFactory.openSession()) {
+//            transaction = session.beginTransaction();
+//            Query<User> query = session.createQuery("FROM User", User.class);
+//            users = query.getResultList();
+//            transaction.commit();
+//        } catch (HibernateException e) {
+//            if (transaction != null) {
+//                transaction.rollback();
+//            }
+//            e.printStackTrace();
+//        }
+//        return users;
+//    }
     public List<User> getAllUsers() {
         Transaction transaction = null;
         List<User> users = new ArrayList<>();
         SessionFactory sessionFactory = getSessionFactory();
         try (Session session = sessionFactory.openSession()) {
             transaction = session.beginTransaction();
-            Query<User> query = session.createQuery("FROM User", User.class);
+            String sql = "SELECT * FROM User";
+            NativeQuery<User> query = session.createNativeQuery(sql, User.class);
             users = query.getResultList();
             transaction.commit();
         } catch (HibernateException e) {
